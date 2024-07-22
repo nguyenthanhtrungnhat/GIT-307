@@ -4,21 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment 1. Student Management – Form</title>
+    <style>
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border: 1px solid black;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .form-header {
+            display: flex;
+            padding: 10px 0;
+        }
+
+        .form-row {
+            display: flex;
+            padding: 10px 0;
+        }
+
+        .form-row .col {
+            flex: 25%;
+            margin:  5px;
+            box-sizing: border-box;
+        }
+
+        .form-row .col input,
+        .form-row .col select {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .form-row .col-button {
+            flex: 10%;
+            margin:  5px;
+            box-sizing: border-box;
+        }
+
+        .form-row .col-button button {
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    <table>
-        <tr>
-            <p><b>Add a new student</b></p>
-        </tr>
-        <tr>
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <select name="ClassNum" id=""></select>
-        </tr>
-    </table>
+    <main>
+        <div class="form-container">
+            <div class="form-header">
+                <h3>Add a new student</h3>
+            </div>
+            <div class="form-row">
+                <div class="col"><input type="text" placeholder="Last Name"></div>
+                <div class="col"><input type="text" placeholder="First Name"></div>
+                <div class="col"><input type="email" placeholder="Email"></div>
+                <div class="col">
+                    <select name="ClassNum">
+                        <option value="1">Class 1</option>
+                    </select>
+                </div>
+                <div class="col-button">
+                    <button type="submit">Add</button>
+                </div>
+            </div>
+        </div>
+    </main>
+   
 </body>
 
 </html>

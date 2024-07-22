@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2. Registration form</title>
+    <style>
+        textarea {
+            width: 98%;
+            height: 80px;
+        }
+
+        .textField {
+            width: 98%;
+        }
+
+        .Submit {
+            text-align: center;
+        }
+
+        .TextTitle {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <table border="1" width="50%" cellpadding="10px">
+            <tr>
+                <td class="TextTitle">
+                    <p><b>Full Name*</b></p>
+                </td>
+                <td><input type="text" required class="textField"></td>
+            </tr>
+            <tr>
+                <td class="TextTitle">
+                    <p><b>Email* </b></p>
+                </td>
+                <td><input type="email" requiredclass="textField"></td>
+            </tr>
+            <tr>
+                <td class="TextTitle">
+                    <p><b>Password*</b></p>
+                </td>
+                <td><input type="password" placeholder="Enter your password" requiredclass="textField"></td>
+            </tr>
+            <tr>
+                <td class="TextTitle">
+                    <p><b>Phone number* </b></p>
+                </td>
+                <td><input type="tel" requiredclass="textField"></td>
+            </tr>
+            <tr>
+                <td class="TextTitle">
+                    <p><b>Address</b></p>
+                </td>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td class="TextTitle">
+                    <p><b>City</b></p>
+                </td>
+                <td><input type="text" placeholder="Enter your City"> <b>State</b> <input type="text"
+                        placeholder="Enter your State"></td>
+            </tr>
+            <tr>
+                <td class="TextTitle">
+                    <p><b>Zip/Postal Code</b></p>
+                </td>
+                <td><input type="text" placeholder="Enter your Zip/Postal Code" class="textField"></td>
+            </tr>
+            <tr>
+                <td class="TextTitle">
+                    <p><b>Country </b></p>
+                </td>
+                <td>
+                    <select>
+                        <option value="1">Select your city</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="TextTitle">
+                    <p><b>Birthday</b></p>
+                </td>
+
+                <td>
+                    <input type="datetime" placeholder="mm/dd/yyyy" class="textField">
+                </td>
+            </tr>
+            <tr>
+                <td class="TextTitle">
+                    <p><b>Gender</b></p>
+                </td>
+
+                <td>
+                    <select name="Gender">
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="TextTitle">
+                    <p><b>Starting date</b></p>
+                </td>
+
+                <td>
+                    <input type="radio">Spring
+                    <input type="radio" checked>Summer
+                </td>
+            </tr>
+            <tr>
+                <td class="TextTitle">
+                    <p><b>Comments</b></p>
+                </td>
+
+                <td><textarea placeholder="Please send us more information"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="Submit">
+                    <button type="submit">Submit</button>
+                </td>
+
+            </tr>
+
+        </table>
+    </main>
+
+</body>
+
+</html>

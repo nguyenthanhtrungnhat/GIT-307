@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .laptop-table, .filter-table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .laptop-table td, .filter-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .laptop-table img {
+            width: 100px;
+            height: auto;
+        }
+        .brands {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .brands a {
+            margin: 0 5px;
+            text-decoration: none;
+            color: #00f;
+        }
+    </style>
+</head>
+<body>
+    <div class="brands">
+        <a href="#">Apple</a>
+        <a href="#">Toshiba</a>
+        <a href="#">Lenovo</a>
+        <a href="#">Dell</a>
+        <a href="#">Asus</a>
+        <a href="#">Hacer</a>
+        <a href="#">HP</a>
+    </div>
+
+    <div class="container">
+        <fieldset>
+            <legend>Laptops</legend>
+            <table class="laptop-table">
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td rowspan="2"><img src="laptop-image-url" alt="Apple MacBook Air"></td>
+                                <td>Apple MacBook Air</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    64GB SSD<br>
+                                    2GB DDR<br>
+                                    1300 USD<br>
+                                    Intel Core i5
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td rowspan="2"><img src="laptop-image-url" alt="Apple MacBook Air"></td>
+                                <td>Apple MacBook Air</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    64GB SSD<br>
+                                    2GB DDR<br>
+                                    1300 USD<br>
+                                    Intel Core i5
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td rowspan="2"><img src="laptop-image-url" alt="Apple MacBook Air"></td>
+                                <td>Apple MacBook Air</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    64GB SSD<br>
+                                    2GB DDR<br>
+                                    1300 USD<br>
+                                    Intel Core i5
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td rowspan="2"><img src="laptop-image-url" alt="Apple MacBook Air"></td>
+                                <td>Apple MacBook Air</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    64GB SSD<br>
+                                    2GB DDR<br>
+                                    1300 USD<br>
+                                    Intel Core i5
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td rowspan="2"><img src="laptop-image-url" alt="Apple MacBook Air"></td>
+                                <td>Apple MacBook Air</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    64GB SSD<br>
+                                    2GB DDR<br>
+                                    1300 USD<br>
+                                    Intel Core i5
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td rowspan="2"><img src="laptop-image-url" alt="Apple MacBook Air"></td>
+                                <td>Apple MacBook Air</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    64GB SSD<br>
+                                    2GB DDR<br>
+                                    1300 USD<br>
+                                    Intel Core i5
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset class="filters">
+            <legend>Filters</legend>
+            <table class="filter-table">
+                <tr>
+                    <td>Min price:</td>
+                    <td>500 USD</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="range" min="500" max="1500" value="500">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Max price:</td>
+                    <td>1500 USD</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="range" min="500" max="1500" value="1500">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Min RAM:</td>
+                    <td>4 GB</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="range" min="4" max="16" value="4">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Max RAM:</td>
+                    <td>16 GB</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="range" min="4" max="16" value="16">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+</body>
+</html>
