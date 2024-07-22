@@ -47,8 +47,10 @@ img {
     display: block;
 }
 
-.main-menu li.has-children a:after {
-    content: "V";
+.main-menu li.has-children>a:after {
+    font-family: "fontawesome";
+    content: "\f107";
+
 }
 
 .small-title {
@@ -125,24 +127,28 @@ input[name=FullName] {
     border-radius: 10px;
     margin-bottom: 10px;
 }
+
 input[name=Phone] {
     border-radius: 10px;
     margin-bottom: 10px;
 }
+
 input[name=Email] {
     border-radius: 10px;
     margin-bottom: 10px;
 }
+
 textarea[name=Content] {
     border-radius: 10px;
     margin-bottom: 10px;
 }
-.formCST{
+
+.formCST {
     padding-top: 200px;
-}   
+}
 
 .Consultant {
-    background: url(images/background-consultant.jpg) ;
+    background: url(images/background-consultant.jpg);
     /* background: url(images/background-consultant.jpg) no-repeat fixed center; */
 }
 
@@ -196,7 +202,7 @@ textarea[name=Content] {
 }
 
 .item-osv {
-    width: 25%;
+    /* width: 25%; */
     box-sizing: border-box;
     align-items: stretch;
     margin-bottom: 40px;
@@ -251,4 +257,15 @@ textarea[name=Content] {
 
 .item-sv {
     padding-bottom: 20px;
+}
+
+.colBottomIntro {
+    margin-top: 40px;
+}
+
+
+.Fnews a::before {
+    font-family: "fontawesome";
+    content: "\f107";
+    padding-right: 30px;
 }
