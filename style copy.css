@@ -1,0 +1,271 @@
+.main-menu>li>a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.main-menu,
+.subMenu {
+    list-style-type: none;
+}
+
+.subMenu a {
+    text-decoration: none;
+}
+
+.main-menu>li {
+    display: inline-block;
+    position: relative;
+}
+
+.main-menu>li>a {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px 10px;
+}
+
+.main-menu>li:hover>a {
+    background-color: #0B6735;
+    color: white;
+}
+
+.subMenu {
+    display: none;
+
+    position: absolute;
+    left: 0;
+    top: 39px;
+    width: 150px;
+}
+
+.main-menu>li:hover>.subMenu {
+    display: block;
+}
+
+.main-menu li.has-children>a:after {
+    font-family: "fontawesome";
+    content: "\f107";
+
+}
+
+.small-title {
+    font-weight: bold;
+}
+
+.small-title-service {
+    font-weight: bold;
+    color: #0B6735;
+    text-align: center;
+}
+
+.small-title-dnew {
+    font-weight: bold;
+    color: #0B6735;
+
+}
+
+.introduction-title {
+    font-weight: bold;
+    color: #0B6735;
+}
+
+.introduction-title-dnew {
+    font-weight: bold;
+
+}
+
+.introduction-text {
+    text-align: justify;
+}
+
+.introduction-title-service {
+    font-weight: bold;
+    color: #0B6735;
+    text-align: center;
+}
+
+.p-text {
+    text-align: center;
+}
+
+.servicePicture {
+    text-align: center;
+    box-shadow: 0px 3px 15px 1px #000000;
+    border-radius: 3px;
+    margin: 10px;
+    margin-bottom: 20px;
+    height: 100%;
+
+}
+
+.text-sv {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.introduction-title-otherservice {
+    font-weight: bold;
+
+    text-align: center;
+}
+
+
+
+input[name=FullName] {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+input[name=Phone] {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+input[name=Email] {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+textarea[name=Content] {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.formCST {
+    padding-top: 200px;
+}
+
+.Consultant {
+    background: url(images/background-consultant.jpg);
+    /* background: url(images/background-consultant.jpg) no-repeat fixed center; */
+}
+
+
+.White-text {
+    text-align: center;
+    color: white;
+}
+
+.overlay {
+
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.service {
+    background: url(images/background-service.jpg);
+    margin-top: 30px;
+}
+
+.overlay-service {
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+.footer {
+    background-color: #222325;
+    color: white;
+}
+
+@media (min-width: 576px) {
+    .item-sv {
+        width: 33.33%;
+        box-sizing: border-box;
+    }
+
+    .item-gr-sv {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+
+    }
+
+    .item-osv {
+        width: 25%;
+        box-sizing: border-box;
+        align-items: stretch;
+        margin-bottom: 40px;
+    }
+
+}
+
+.item-osv {
+    /* width: 25%; */
+    box-sizing: border-box;
+    align-items: stretch;
+    margin-bottom: 40px;
+}
+
+.otherservicePicture {
+    text-align: center;
+    box-shadow: 0px 3px 15px 1px #000000;
+    border-radius: 30px;
+    margin: 10px;
+    margin-bottom: 20px;
+    height: 100%;
+
+}
+
+.introduction {
+    margin-top: 30px;
+}
+
+.DailyNew {
+    margin-top: 30px;
+}
+
+.go-to-top {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    border-radius: 50%;
+    line-height: 40px;
+    cursor: pointer;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+
+.menu {
+    margin-top: 5px;
+}
+
+
+.man {
+    margin-top: -20px;
+
+}
+
+.girl {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.item-sv {
+    padding-bottom: 20px;
+}
+
+.colBottomIntro {
+    margin-top: 40px;
+}
+
+
+.Fnews a::before {
+    font-family: "fontawesome";
+    content: "\f107";
+    padding-right: 30px;
+}
