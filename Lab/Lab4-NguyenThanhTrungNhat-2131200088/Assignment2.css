@@ -1,0 +1,28 @@
+
+.greenRow {
+    background-color: rgb(25, 197, 25);
+    color: white;
+}
+
+.grayRow {
+    background-color: lightgray;
+
+}
+
+main {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid black;    
+}
+
+.myTable {
+    width: 100%;
+    border-collapse: collapse;
+}

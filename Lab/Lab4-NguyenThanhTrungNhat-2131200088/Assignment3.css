@@ -1,0 +1,65 @@
+.pg1 {
+    border: 1px solid black;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.pg2 {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.itemf,
+.items {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.gio {
+    color: lightgray;
+}
+
+.sport {
+    color: gray;
+}
+
+.blueText {
+    color: blue;
+}
+
+.grayspan {
+    color: gray;
+}
+
+.bluespan {
+    color: rgb(0, 151, 252);
+
+}
+
+.hasiconplay::after {
+    font-family: "fontawesome";
+    content: "\f01d";
+    padding-left: 10px;
+    color: gray;
+}
+
+.hasiconplay2::before {
+    font-family: "fontawesome";
+    content: "\f16a";
+    padding-right: 10px;
+    color: gray;
+}
+
+a {
+    text-decoration: none;
+}
+
+.gr {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.avt {
+    border-radius: 50%;
+}
