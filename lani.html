@@ -56,6 +56,18 @@
         </div>
 
     </header>
+    <!-- cai moi viet hom nay 25-7 -->
+    <img src="images/slider-1.jpg" id="slider">
+    <script type="text/javascript">
+        let sliderEl = document.querySelector("#slider");
+        console.log(sliderEl);
+        function ChangeImage() {
+            let sliderEl = document.querySelector("#slider");
+            sliderEl.src = "images/slider-2.jpg";
+        }
+        setTimeout(ChangeImage, 5000);
+    </script>
+    <!-- end -->
     <main>
         <section class="introduction">
             <div class="container">

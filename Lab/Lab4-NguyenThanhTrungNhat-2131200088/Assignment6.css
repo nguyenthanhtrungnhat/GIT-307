@@ -1,0 +1,54 @@
+a {
+    text-decoration: none;
+}
+
+
+.topLi {
+    border-top: 1px solid #f0f0f0;
+}
+
+.mainmenu>li {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+    border-left: 1px solid #f0f0f0;
+    /* padding: 10px; */
+}
+
+.mainmenu>li:hover {
+    color: white;
+    background-color: #f0f0f0;
+
+}
+
+.mainmenu>li:hover>a {
+    color: #ffffff;
+}
+
+.submenu {
+    display: none;
+    position: sticky;
+    background-color: #ffffff;
+}
+
+.mainmenu>li:hover>.submenu {
+    display: block;
+}
+
+.menuBig {
+    width: 200px;
+}
+
+.mainmenu li.has-children>a:after {
+    font-family: "fontawesome";
+    content: "\f107";
+    position: absolute;
+    right: 5px;
+}
+
+.submenu li>a::before {
+    content: "+";
+    position: absolute;
+    left: 5px;
+}
