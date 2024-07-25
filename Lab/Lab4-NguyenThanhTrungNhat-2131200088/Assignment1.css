@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Ticket {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: ridge;
+    padding: 10px;
+}
+.circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: forestgreen;
+    border-radius: 50%;
+}
+
+.RedText {
+    color: red;
+}
+
+.grayText {
+    color: gray;
+}
+.blueText
+{
+    color: blue;
+}
+.orangeText{
+    color: orange;
+}
+td{
+    vertical-align: top;
+}

@@ -264,8 +264,8 @@ textarea[name=Content] {
 }
 
 
-.Fnews a::before {
+/* .Fnews a::before {
     font-family: "fontawesome";
     content: "\f107";
     padding-right: 30px;
-}
+} */

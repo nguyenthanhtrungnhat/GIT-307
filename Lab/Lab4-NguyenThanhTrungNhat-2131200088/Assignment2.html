@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2. International Employees</title>
+    <style>
+        .greenRow {
+            background-color: rgb(25, 197, 25);
+            color: white;
+        }
+
+        .grayRow {
+            background-color: lightgray;
+
+        }
+
+        main {
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: ridge;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        .myTable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <table class="myTable">
+            <colgroup>
+                <col width="100px" />
+                <col width="100px" />
+                <col width="100px" />
+                <col width="100px" />
+            </colgroup>
+            <thead>
+                <tr class="greenRow">
+                    <td>
+                        <p>Contact name</p>
+                    </td>
+                    <td>
+                        <p>City</p>
+                    </td>
+                    <td>
+                        <p>Country</p>
+                    </td>
+                    <td>
+                        <p>Is Promoted</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Marsia Anders</p>
+                    </td>
+                    <td>
+                        <p>Berlin</p>
+                    </td>
+                    <td> <img src="Gflag.jfif" alt="" loading="lazy" width="30px"> Germany</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="grayRow">
+                    <td>
+                        <p>Ana Trujillo</p>
+                    </td>
+                    <td>
+                        <p>México D.F.</p>
+                    </td>
+                    <td><img src="mexicoflag.jfif" alt="" loading="lazy" width="30px"> Mexico</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Antonio Moreno</p>
+                    </td>
+                    <td>
+                        <p>México D.F.</p>
+                    </td>
+                    <td><img src="mexicoflag.jfif" alt="" loading="lazy" width="30px"> Mexico</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="grayRow">
+                    <td>
+                        <p>Thomas Hardy</p>
+                    </td>
+                    <td>
+                        <p>London</p>
+                    </td>
+                    <td><img src="ukflag.png" alt="" loading="lazy" width="30px"> UK</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+</body>
+
+</html>
