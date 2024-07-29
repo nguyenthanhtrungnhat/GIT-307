@@ -13,7 +13,10 @@ a {
     border-bottom: 1px solid #f0f0f0;
     border-right: 1px solid #f0f0f0;
     border-left: 1px solid #f0f0f0;
-    /* padding: 10px; */
+    
+}
+.divli{
+padding: 10px;
 }
 
 .mainmenu>li:hover {
@@ -40,15 +43,15 @@ a {
     width: 200px;
 }
 
-.mainmenu li.has-children>a:after {
+.mainmenu li.has-children>.divli>a:after {
     font-family: "fontawesome";
     content: "\f107";
     position: absolute;
-    right: 5px;
+    right: 10px;
 }
 
 .submenu li>a::before {
     content: "+";
     position: absolute;
-    left: 5px;
+    left: 10px;
 }
