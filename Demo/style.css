@@ -36,7 +36,6 @@ img {
 
 .subMenu {
     display: none;
-
     position: absolute;
     left: 0;
     top: 39px;
@@ -159,7 +158,6 @@ textarea[name=Content] {
 }
 
 .overlay {
-
     background-color: rgba(0, 0, 0, 0.6);
     padding-top: 30px;
     padding-bottom: 30px;
