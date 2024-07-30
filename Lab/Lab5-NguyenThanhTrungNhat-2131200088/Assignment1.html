@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1. Embedding font</title>
+    <style>
+        body {
+            font-family: Consolas;
+            color: #0094ff;
+        }
+
+
+
+        @font-face {
+            font-family: "EdwardianScriptITC";
+            src: url('Edwardian Script ITC.ttf');
+        }
+
+        .spanL {
+            font-family: EdwardianScriptITC;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <p>
+            <strong><span class="spanL">L</span>orem ipsum dolor sit amet,
+                consectetur adipiscing elit. Phasellus aliquam</strong>
+            dapibus convallis. Duis faucibus, tellus id aliquam dictum, purus lorem facilisis
+            diam, non mollis leo urna vel enim. Phasellus accumsan, ipsum nec feugiat ornare,
+            ligula erat vehicula magna, aliquam lacinia nibh dolor nec tellus. Nunc aliquet
+            elementum convallis. Fusce egestas iaculis neque, at interdum justo pretium sed.
+            Fusce ornare, eros consectetur aliquam luctus, enim risus fermentum dui, et
+            condimentum magna magna nec ipsum. Aenean lobortis vestibulum pharetra. Maecenas
+            euismod malesuada libero, id dapibus ligula mattis ac.
+        </p>
+    </main>
+</body>
+
+</html>

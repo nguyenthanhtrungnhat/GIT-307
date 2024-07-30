@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6. Menu Section</title>
+    <style>
+        .mainMenu {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            /* text-align: center; */
+            background-color: darkslateblue;
+            border-bottom: 5px solid orange;
+            position: relative;
+        }
+
+        .mainMenu>li {
+            border-left: 1px solid gray;
+            border-right: 1px solid gray;
+        }
+
+        .mainMenu>li:hover {
+            background-color: orange;
+        }
+
+        .mainMenu>li:hover>.subMenu {
+            display: block;
+        }
+
+        .currentMenu {
+            background-color: orange;
+        }
+
+        .mainMenu>li>a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        a {
+            display: block;
+            padding: 20px;
+        }
+
+        .subMenu {
+            display: none;
+            position: absolute;
+            list-style: none;
+            left: 0;
+
+        }
+
+        .subMenu>li>a {
+
+            text-decoration: none;
+        }
+
+        /* .divli {
+            padding: 10px;
+        } */
+    </style>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul class="mainMenu">
+
+
+            <li class="currentMenu"><a href="#">Trang chủ</a></li>
+
+            <li class="hasC">
+                <a href="#">Khoa CNTT</a>
+                <ul class="subMenu">
+                    <li><a href="#">Ngành Kỹ thuật phần mềm</a></li>
+                    <li><a href="#">Ngành Mạng máy tính và Truyền thông dữ liệu</a></li>
+                    <li><a href="#">Ngành Khoa học máy tính</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Chương trình đào tạo</a>
+                <ul class="subMenu">
+                    <li><a href="#">Ngành Kỹ thuật phần mềm</a></li>
+                    <li><a href="#">Ngành Mạng máy tính và Truyền thông dữ liệu</a></li>
+                    <li><a href="#">Ngành Khoa học máy tính</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Sự kiện</a></li>
+            <li><a href="#">Nghiên cứu khoa học</a></li>
+            <li>
+                <a href="#">Giáo vụ</a>
+                <ul class="subMenu">
+                    <li><a href="#">Ngành Kỹ thuật phần mềm</a></li>
+                    <li><a href="#">Ngành Mạng máy tính và Truyền thông dữ liệu</a></li>
+                    <li><a href="#">Ngành Khoa học máy tính</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

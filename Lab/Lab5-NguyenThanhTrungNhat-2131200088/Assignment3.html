@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3. Animated Search Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style type="text/css">
+        .formwsi::before {
+            font-family: "fontawesome";
+            content: "\f002";
+        }
+
+        .formwsi {
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            transition: 0.4s ease-in-out;
+            border-radius: 10px;
+        }
+
+        input {
+            outline: none;
+            border: none;
+            width: 200px;
+        }
+
+        .formwsi {
+            border: 1px solid black;
+            width: 300px;
+        }
+
+        .formwsi:hover {
+            width: 500px;
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="formwsi">
+            <input type="search" class="btn" placeholder="Search...">
+        </div>
+
+    </main>
+</body>
+
+</html>
