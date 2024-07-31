@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4. Product Section*</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        h4 {
+            border-bottom: orange solid 5px;
+            width: 150px;
+            margin: 0;
+        }
+
+        hr {
+            margin: 1px;
+        }
+
+        img {
+            border: 2px solid gray;
+            width: 300px;
+            height: 300px;
+        }
+
+        .products {
+            margin-top: 40px;
+        }
+
+        .item {
+            position: relative;
+
+        }
+
+        .item:hover .overlay {
+            position: absolute;
+
+        }
+
+        .overlay {
+            display: flex;
+            text-align: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .overlay:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h4>TỔNG ĐÀI IP</h4>
+            <hr>
+        </div>
+        <div class="container products">
+            <div class="row">
+                <div class="col-6 item">
+                    <div class="overlay">
+                        <img src="CXS1000.png" loading="lazy">
+                        <p><strong>Tổng đài IP Xorcom Spark - CXS1000/NU</strong></p>
+                        <p class="redText">Vui lòng gọi(028) 7302 8080</p>
+                    </div>
+                </div>
+                <div class="col-6 item">
+                    <img src="tong-dai-ip-Spark-1000-nu-1024x1024.jpg" loading="lazy">
+                    <p><strong>Tổng đài IP Xorcom Spark - CXS1000/NU</strong></p>
+                    <p class="redText">Vui lòng gọi(028) 7302 8080</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

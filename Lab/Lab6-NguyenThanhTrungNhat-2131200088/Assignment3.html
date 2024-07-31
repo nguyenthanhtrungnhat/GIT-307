@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3. Flower Shop Footer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .icon {
+            background-color: #793aa9;
+            color: white;
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+        }
+
+        .media {
+            height: 80px;
+        }
+
+        .fa {
+            font-size: 30px;
+        }
+
+        h5 {
+            color: #793aa9;
+            font-weight: bold;
+        }
+
+        h4 {
+            font-size: large;
+            font-weight: bold;
+            position: relative;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+        }
+
+        h4::before {
+            content: "";
+            position: absolute;
+            border: 2px solid #793aa9;
+            width: 50px;
+            left: 5px;
+            bottom: 0;
+            border-radius: 10px;
+        }
+
+        .sloganText {
+            width: 210px;
+        }
+
+        .slogan {
+            margin: 30px;
+            border-top: #793aa9 solid 3px;
+            border-bottom: #793aa9 solid 3px;
+            padding: 20px;
+        }
+
+        .botMenu>ul>li {
+            list-style: none;
+            text-decoration: none;
+            padding-bottom: 5px;
+        }
+
+        a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        .botMenuText {
+            margin-bottom: 5px;
+        }
+
+        .botMenuTextdiv {
+            padding-left: 0;
+            margin-bottom: 5px;
+        }
+
+        .phoneformat {
+            margin: 10px;
+        }
+
+        .copyright {
+            display: flex;
+            justify-content: center;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <footer>
+        <div class="container">
+            <section class="slogan">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12 phoneformat">
+                        <div class="media">
+                            <div class="icon mr-3">
+                                <i class="fa fa-truck" aria-hidden="true"></i>
+                            </div>
+                            <div class="media-body">
+                                <h5 class="mt-0">GIAO HÀNG MIỄN PHÍ</h5>
+                                <p class="sloganText">Chúng tôi giao hàng miễn phí trong nội thành</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 phoneformat">
+                        <div class="media">
+                            <div class="icon mr-3">
+                                <i class="fa fa-weixin" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="media-body">
+                                <h5 class="mt-0">TƯ VẤN TẬN TÂM</h5>
+
+                                <p class="sloganText">Mang đến cho Quý khách những sản phẩm tốt nhất</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 phoneformat">
+                        <div class="media">
+                            <div class="icon mr-3">
+                                <i class="fa fa-usd" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="media-body">
+                                <h5 class="mt-0"> GIÁ THÀNH TỐT NHẤT</h5>
+                                <p class="sloganText">Cam kết giá thành & dịch vụ sau bán hàng tốt nhất</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <div class="row">
+                <div class="col-lg-3 botMenu">
+
+                    <h4>HỆ THỐNG</h4>
+                    <ul>
+                        <li><a href="">Hoa sinh nhật</a></li>
+                        <li><a href="">Hoa cưới</a></li>
+                        <li><a href="">Hoa chúc mừng</a></li>
+                        <li><a href="">Chủ đề</a></li>
+                        <li><a href="">Thiết kế</a></li>
+                        <li><a href="">Hoa theo thể loại</a></li>
+                        <li><a href="">Quà tặng</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 botMenu">
+                    <!-- Company -->
+                    <h4>CÔNG TY</h4>
+                    <ul>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Tin tức</a></li>
+                        <li><a href="">Tuyển dụng</a></li>
+                        <li><a href="">Chính sách thành viên</a></li>
+                        <li><a href="">Chương trình khuyến mãi</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 botMenu">
+                    <!-- Công ty -->
+                    <h4>CÔNG TY</h4>
+                    <ul>
+                        <li><a href="">Hướng dẫn đặt hàng</a></li>
+                        <li><a href="">Phương thức thanh toán</a></li>
+                        <li><a href="">Điều khoản mua hàng</a></li>
+                        <li><a href="">Phí vận chuyển</a></li>
+                        <li><a href="">Ý nghĩa các loài hoa</a></li>
+                        <li><a href="">Chăm sóc và bảo quản hoa</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 botMenu">
+                    <!-- Contact -->
+                    <h4>VIOLET ON WEDNESDAY</h4>
+                    <div class="row">
+                        <div class="col-5 "><strong>Địa chỉ:</strong></div>
+                        <div class="col-7 botMenuTextdiv">
+                            <p class="botMenuText">01 Nguyễn Cữu Vân</p>
+                            <p class="botMenuText"> Bình Thạnh, TP.HCM</p>
+                        </div>
+                        <div class="col-5"><strong>Điện thoại:</strong></div>
+                        <div class="col-7 botMenuTextdiv">
+                            <p class="botMenuText">08 38 40 90 92</p>
+                        </div>
+                        <div class="col-5"><strong>Hotline</strong></div>
+                        <div class="col-7 botMenuTextdiv">
+                            <p class="botMenuText">0968 159 239</p>
+                        </div>
+                        <div class="col-12">
+                            <strong>Mọi ý kiến xin vui lòng gửi về</strong>
+                            <p class="botMenuText">support@violetonwesnesday.com</p>
+                        </div>
+                        <div class="col-12">
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                            <i class="fa fa-steam-square" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <section class="copyright">
+            <p>&copy; 2015 Violet on Wednesday Store. All Rights Reserved. Sponsored by Letsop Solutions.</p>
+        </section>
+    </footer>
+</body>
+
+</html>
