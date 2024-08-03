@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.currentMenu {
+    background-color: orange;
+}
+
+.mainMenu {
+    list-style: none;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainMenu>li {
+    border-right: 1px solid grey;
+}
+
+.mainMenu>li>a {
+    display: block;
+}
+
+.mainMenu>li:hover {
+    background-color: orange;
+}
+
+.mainMenu>li:hover>.subMenu {
+    display: block;
+    background-color:#284A70;
+    position: absolute;
+}
+
+.subMenu {
+    display: none;
+    list-style: none;
+    position: absolute;
+}
+
+.subMenu>li {
+    padding: 20px;
+    border: 2px solid grey;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+.wapper {
+    border-bottom: 5px solid orange;
+    background-color: #284A70;
+    
+}
+
+.hasC::after {
+    font-family: 'fontawesome';
+    content: '\f107';
+}
