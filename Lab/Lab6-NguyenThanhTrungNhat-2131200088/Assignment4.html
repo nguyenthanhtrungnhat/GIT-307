@@ -20,8 +20,8 @@
 
         img {
             border: 2px solid gray;
-            width: 300px;
-            height: 300px;
+            width: 350px;
+            height: 350px;
         }
 
         .products {
@@ -30,16 +30,18 @@
 
         .item {
             position: relative;
-
+            align-items: center;
+            text-align: center;
         }
 
         .item:hover .overlay {
             position: absolute;
-
+            display: flex;
+            
         }
 
         .overlay {
-            display: flex;
+            display: none;
             text-align: center;
             flex-wrap: wrap;
             align-items: center;
@@ -61,10 +63,12 @@
             <div class="row">
                 <div class="col-6 item">
                     <div class="overlay">
-                        <img src="CXS1000.png" loading="lazy">
-                        <p><strong>Tổng đài IP Xorcom Spark - CXS1000/NU</strong></p>
-                        <p class="redText">Vui lòng gọi(028) 7302 8080</p>
+                        <button type="button">a</button>
+                        <button type="button">a</button>
                     </div>
+                    <img src="CXS1000.png" loading="lazy">
+                    <p><strong>Tổng đài IP Xorcom Spark - CXS1000/NU</strong></p>
+                    <p class="redText">Vui lòng gọi(028) 7302 8080</p>
                 </div>
                 <div class="col-6 item">
                     <img src="tong-dai-ip-Spark-1000-nu-1024x1024.jpg" loading="lazy">

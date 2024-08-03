@@ -59,15 +59,6 @@
     </header>
     <!-- cai moi viet hom nay 25-7 -->
     <img src="images/slider-1.jpg" id="slider">
-    <script type="text/javascript">
-        let sliderEl = document.querySelector("#slider");
-        console.log(sliderEl);
-        function ChangeImage() {
-            let sliderEl = document.querySelector("#slider");
-            sliderEl.src = "images/slider-2.jpg";
-        }
-        setTimeout(ChangeImage, 5000);
-    </script>
     <!-- end -->
     <main>
         <section class="introduction">
@@ -106,19 +97,9 @@
                     chất lượng cao, đầy thú vị và thử thách, phù hợp cho các golf thủ ở tất cả các mức kỹ năng </p>
                 <div class="container">
                     <div class="row" id="serviceRow">
-                        <!-- <div class="col-lg-4 col-sm-12 item-sv">
-                            <article class="servicePicture">
-                                <img src="images/service-design.jpg" loading="lazy">
-                                <div class="text-sv">
-                                    <h2><strong>Thiết kế</strong></h2>
-                                    <p>Đội ngũ thiết kế sân golf hơn 10 năm kkinh nghiệm, thi công đạt tiêu chuẩn quốc
-                                        tế.
-                                    </p>
-                                </div>
-                            </article>
-                        </div> -->
-                    </div>
 
+                    </div>
+                    <button type="button" class="btn btn-outline-success w-100" onclick="loadMore()">Load more</button>
                 </div>
             </div>
         </section>
