@@ -31,7 +31,7 @@
 
 .mainMenu>li:hover>.subMenu {
     display: block;
-    background-color:#284A70;
+    background-color: #284A70;
     position: absolute;
 }
 
@@ -55,10 +55,11 @@ a {
 .wapper {
     border-bottom: 5px solid orange;
     background-color: #284A70;
-    
+
 }
 
 .hasC::after {
     font-family: 'fontawesome';
     content: '\f107';
+    margin-left: 20px;
 }
