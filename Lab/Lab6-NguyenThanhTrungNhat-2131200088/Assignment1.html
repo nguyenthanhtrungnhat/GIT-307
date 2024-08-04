@@ -5,28 +5,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 1. Pricing Table</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .col {
+            display: inline-block;
+            padding: 10px;
+            border: 1px solid grey;
+            margin-right: 20px;
+            margin-left: 20px;
+            width: 170px;
+            border-radius: 2%;
+        }
+
+        .number {
+            font-size: large;
+            color: black;
+            font-weight: bold;
+        }
+
+        .price {
+            color: orange;
+            font-weight: bold;
+        }
+
+        .content {
+            margin: 10px;
+        }
+
+        p {
+            color: grey;
+        }
+
+        .title {
+            font-weight: normal;
+            color: aqua;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .recommend {
+            border: 3px solid aqua;
+        }
+
+        .recommended {
+            color: white;
+            background-color: aqua;
+            text-align: center;
+            padding: 5px;
+            margin-left: 15px;
+            margin-right: 15px;
+           
+            border-bottom-left-radius: 10%;
+            border-bottom-right-radius: 10%;
+        }
+
+        .colr {
+            border: 3px solid aqua;
+        
+            margin-right: 10px;
+            margin-left: 10px;
+            padding-top: 0;
+        }
+
+        .btn {
+            background-color: orange;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            border: 0;
+            padding: 15px;
+            border-radius: 5%;
+        }
+
+        .btnr {
+            padding: 25px;
+            background-color: aqua;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            border: 0;
+
+            border-radius: 5%;
+        }
+    </style>
 </head>
 
 <body>
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-3 item">
-                    
-                </div>
-                <div class="col-3 item0">
-                    
-                </div>
-                <div class="col-3 item">
-                    
-                </div>
-                <div class="col-3 item">
-                    
+
+        <div class="col">
+            <div class="center">
+                <h1 class="title">Started</h1>
+                <div class="content">
+                    <h1 class="price">$19</h1>
+                    <p>per month</p>
                 </div>
             </div>
+            <hr>
+            <div class="content">
+                <p><span class="number">2</span> websites</p>
+                <p><span class="number">5 GB</span> storage</p>
+                <p><span class="number">3</span> users</p>
+            </div>
+            <button class="btn">Choose Plan</button>
         </div>
+
+
+        <div class=" col colr">
+            <p class="recommended">Recommended</p>
+            <div class="center">
+                <h1 class="title">Team</h1>
+                <div class="content">
+                    <h1 class="price">$49</h1>
+                    <p>per month</p>
+                </div>
+            </div>
+            <hr>
+            <div class="content">
+                <p><span class="number">5</span> websites</p>
+                <p><span class="number">20 GB</span> storage</p>
+                <p><span class="number">10</span> users</p>
+            </div>
+            <button class="btnr">Choose Plan</button>
+        </div>
+
+
+        <div class="col">
+            <div class="center">
+                <h1 class="title">Premium</h1>
+                <div class="content">
+                    <h1 class="price">$99</h1>
+                    <p>per month</p>
+                </div>
+            </div>
+            <hr>
+            <div class="content">
+                <p><span class="number">20</span> websites</p>
+                <p><span class="number">50 GB</span> storage</p>
+                <p><span class="number">25</span> users</p>
+            </div>
+            <button class="btn">Choose Plan</button>
+        </div>
+        <div class="col">
+            <div class="center">
+                <h1 class="title">Corporate</h1>
+                <div class="content">
+                    <h1 class="price">$249</h1>
+                    <p>per month</p>
+                </div>
+            </div>
+            <hr>
+            <div class="content">
+                <p><span class="number">∞</span> websites</p>
+                <p><span class="number">200 GB</span> storage</p>
+                <p><span class="number">∞</span> users</p>
+            </div>
+            <button class="btn">Choose Plan</button>
+        </div>
+
     </main>
 </body>
 
