@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mainMenu {
+    list-style: none;
+    width: 100%;
+    background-color: #793aa9;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+.headBannerText {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+.notB {
+    font-weight: normal;
+
+}
+
+.mainMenu>li {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.greyBanner {
+    background-color: #2c3e50;
+    padding: 10px;
+    font-size: small;
+}
+
+.hasSearch {
+    background-color: white;
+    border-left: 0;
+}
+
+.btnSearch {
+    border-right: 0;
+}
+
+.logo {
+    width: 100%;
+}
+
+.redPrice {
+    color: red;
+    font-weight: bold;
+}
+
+.xehang {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+
+
+ul {
+    margin: 0;
+}
+
+.nav {
+    background-color: #793aa9;
+}
+
+
+h1 {
+    background-color: #f8f8f8;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    border-left: 5px solid #793aa9
+}
+
+header {
+    margin-bottom: 10px;
+}
+
+.product-item p.red {
+    margin: 0 10px 15px;
+    padding: 0;
+    color: red;
+    font-weight: bold
+}
+
+.product-item h3 {
+    margin: 15px 10px 0;
+    padding: 0;
+    color: #2c3e50;
+    font-size: 16px;
+    font-weight: bold
+}
+
+.product-item p.purple {
+    margin: 10px;
+    padding: 0;
+    color: purple;
+    font-weight: bold
+}
+
+.product-item p.strike {
+    margin: 10px 10px 0;
+    color: grey;
+}
+
+.product-item {
+    background-color: #f8f8f8;
+}
+
+.product-item img {
+    width: 100%;
+}
+
+.mainMenu>li:hover {
+    background-color: plum;
+}
+
+.mainMenu>li:hover a {
+    color: white;
+    text-decoration: none;
+}
+
+.subMenu {
+    display: none;
+}
+
+.hasS {
+    margin: 10px;
+}
+
+.mnav {
+    display: none;
+}
+
+.fa-bars {
+    color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav {
+        display: none;
+    }
+
+    .mnav {
+        padding: 10px;
+        display: flex;
+        background-color: #793aa9;
+    }
+
+    .nav:hover>a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.product-item {
+    position: relative;
+
+}
+
+.discount-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.hasSub {
+    position: relative;
+
+}
+
+.hasSub:hover .subMenu {
+    display: block;
+    background-color: #793aa9;
+}
+
+.hasSub:hover .subMenu a {
+    color: black;
+
+}
+
+.subMenu {
+    position: absolute;
+    z-index: 1000;
+    list-style: none;
+    padding: 10px;
+}
+.midbanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.midbanner .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

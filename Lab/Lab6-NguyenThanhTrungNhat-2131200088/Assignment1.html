@@ -11,14 +11,21 @@
             margin: 0;
         }
 
+        .row {
+          
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+        }
+
         .col {
             display: inline-block;
             padding: 10px;
             border: 1px solid grey;
-            margin-right: 20px;
-            margin-left: 20px;
-            width: 170px;
+            margin-right: 10px;
             border-radius: 2%;
+            width: 24%;
+            box-sizing: border-box;
         }
 
         .number {
@@ -60,16 +67,13 @@
             padding: 5px;
             margin-left: 15px;
             margin-right: 15px;
-           
             border-bottom-left-radius: 10%;
             border-bottom-right-radius: 10%;
         }
 
         .colr {
             border: 3px solid aqua;
-        
             margin-right: 10px;
-            margin-left: 10px;
             padding-top: 0;
         }
 
@@ -92,7 +96,6 @@
             text-align: center;
             width: 100%;
             border: 0;
-
             border-radius: 5%;
         }
     </style>
@@ -100,76 +103,79 @@
 
 <body>
     <main>
-
-        <div class="col">
-            <div class="center">
-                <h1 class="title">Started</h1>
-                <div class="content">
-                    <h1 class="price">$19</h1>
-                    <p>per month</p>
+        <div class="row">
+            <div class="col">
+                <div class="center">
+                    <h1 class="title">Started</h1>
+                    <div class="content">
+                        <h1 class="price">$19</h1>
+                        <p>per month</p>
+                    </div>
                 </div>
+                <hr>
+                <div class="content">
+                    <p><span class="number">2</span> websites</p>
+                    <p><span class="number">5 GB</span> storage</p>
+                    <p><span class="number">3</span> users</p>
+                </div>
+                <button class="btn">Choose Plan</button>
             </div>
-            <hr>
-            <div class="content">
-                <p><span class="number">2</span> websites</p>
-                <p><span class="number">5 GB</span> storage</p>
-                <p><span class="number">3</span> users</p>
+
+
+            <div class=" col colr">
+                <p class="recommended">Recommended</p>
+                <div class="center">
+                    <h1 class="title">Team</h1>
+                    <div class="content">
+                        <h1 class="price">$49</h1>
+                        <p>per month</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="content">
+                    <p><span class="number">5</span> websites</p>
+                    <p><span class="number">20 GB</span> storage</p>
+                    <p><span class="number">10</span> users</p>
+                </div>
+                <button class="btnr">Choose Plan</button>
             </div>
-            <button class="btn">Choose Plan</button>
+
+
+            <div class="col">
+                <div class="center">
+                    <h1 class="title">Premium</h1>
+                    <div class="content">
+                        <h1 class="price">$99</h1>
+                        <p>per month</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="content">
+                    <p><span class="number">20</span> websites</p>
+                    <p><span class="number">50 GB</span> storage</p>
+                    <p><span class="number">25</span> users</p>
+                </div>
+                <button class="btn">Choose Plan</button>
+            </div>
+            <div class="col">
+                <div class="center">
+                    <h1 class="title">Corporate</h1>
+                    <div class="content">
+                        <h1 class="price">$249</h1>
+                        <p>per month</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="content">
+                    <p><span class="number">∞</span> websites</p>
+                    <p><span class="number">200 GB</span> storage</p>
+                    <p><span class="number">∞</span> users</p>
+                </div>
+                <button class="btn">Choose Plan</button>
+            </div>
+
         </div>
 
-
-        <div class=" col colr">
-            <p class="recommended">Recommended</p>
-            <div class="center">
-                <h1 class="title">Team</h1>
-                <div class="content">
-                    <h1 class="price">$49</h1>
-                    <p>per month</p>
-                </div>
-            </div>
-            <hr>
-            <div class="content">
-                <p><span class="number">5</span> websites</p>
-                <p><span class="number">20 GB</span> storage</p>
-                <p><span class="number">10</span> users</p>
-            </div>
-            <button class="btnr">Choose Plan</button>
-        </div>
-
-
-        <div class="col">
-            <div class="center">
-                <h1 class="title">Premium</h1>
-                <div class="content">
-                    <h1 class="price">$99</h1>
-                    <p>per month</p>
-                </div>
-            </div>
-            <hr>
-            <div class="content">
-                <p><span class="number">20</span> websites</p>
-                <p><span class="number">50 GB</span> storage</p>
-                <p><span class="number">25</span> users</p>
-            </div>
-            <button class="btn">Choose Plan</button>
-        </div>
-        <div class="col">
-            <div class="center">
-                <h1 class="title">Corporate</h1>
-                <div class="content">
-                    <h1 class="price">$249</h1>
-                    <p>per month</p>
-                </div>
-            </div>
-            <hr>
-            <div class="content">
-                <p><span class="number">∞</span> websites</p>
-                <p><span class="number">200 GB</span> storage</p>
-                <p><span class="number">∞</span> users</p>
-            </div>
-            <button class="btn">Choose Plan</button>
-        </div>
 
     </main>
 </body>

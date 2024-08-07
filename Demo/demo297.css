@@ -266,6 +266,12 @@ textarea[name=Content] {
     margin-top: 40px;
 }
 
+.testanh {
+    margin-right: auto;
+    margin-left: auto;
+    margin: auto;
+    width: 30%;
+}
 
 /* .Fnews a::before {
     font-family: "fontawesome";
