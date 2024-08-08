@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5. Compare Array of Objects</title>
+</head>
+
+<body>
+    <script>
+        const product = [
+            { productName: "samsung", productImage: "hinhanhcuasamsung", productPrice: 200 },
+            { productName: "iphone", productImage: "hinhanhcuaiphone", productPrice: 100 },
+
+            { productName: "xiaomi", productImage: "hinhanhcuaxiaomi", productPrice: 300 }
+        ];
+
+        console.log(product.sort((a, b) => parseInt(a.productPrice) - parseInt(b.productPrice)));
+    </script>
+</body>
+
+</html>
