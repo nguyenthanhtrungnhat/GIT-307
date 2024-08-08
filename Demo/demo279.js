@@ -1,4 +1,4 @@
-// cai moi viet hom nay 25-7
+// s 25-7
 let sliderEl = document.querySelector("#slider");
 console.log(sliderEl);
 function ChangeImage() {
@@ -45,7 +45,8 @@ function loadMore() {
         .then((data) => {
             let serviceElement = '';
             for (const s of data) {
-                serviceElement += `<div class="col-lg-4 col-sm-12 item-sv">
+                serviceElement +=
+                    `<div class="col-lg-4 col-sm-12 item-sv">
               <article class="servicePicture">
                   <img src="${s.imageURL}" loading="lazy">
                   <div class="text-sv">
@@ -60,6 +61,18 @@ function loadMore() {
         });
 }
 // 5/8 end
+
+//all jquery
+$(document).ready(function () {
+    $.get(
+        "http://139.180.213.49/getdata.php",
+        {
+            'type': 'golf'
+
+        },
+
+    )
+})
 
 
 
