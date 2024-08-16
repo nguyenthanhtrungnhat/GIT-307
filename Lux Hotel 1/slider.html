@@ -1,107 +1,83 @@
-<section class="sliderBottom">
-    <style>
-        .slidebot1 {
-            height: 500px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-image: url(Images/Spa\ like\ no\ other.jpg);
-        }
+<style>
+    .home {
+        color: #111111;
+        padding: 15px 8px;
+    }
 
-        .slidebot2 {
-            height: 500px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-image: url(Images/Culinary\ Experience.jpg);
-        }
+    .navitem {
+        color: #666666;
+        padding: 15px 8px;
+        position: relative;
+    }
 
-        .textsliderBottom1 {
-            width: 50%;
-            height: 100%;
-            background-color: rgba(34, 34, 34, 0.5);
-        }
+    .nav-item {
+        margin: 0 7px;
+    }
 
-        .textsliderBottom2 {
-            width: 50%;
-            height: 100%;
-            background-color: rgba(34, 34, 34, 0.5);
-        }
+    .main-menu {
+        border: 1px solid #eaeaea;
+    }
 
-        .textsliderBottominner {
-            margin: auto;
-            padding-top: 20%;
-            width: 70%;
-            color: white;
-        }
+    .subMenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        border: 1px solid #eaeaea;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        min-width: 150px;
+    }
 
-        .booknow {
-            background-color: tan;
-            color: white;
-            text-align: center;
-            border: none;
-            width: 50%;
-            padding: 10px;
-        }
-    </style>
-    <div class="container-fluid">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="slidebot1 d-block w-100">
-                        <div class="textsliderBottom1">
-                            <div class="textsliderBottominner">
-                                <h2>Spa Like No Other</h2>
-                                <p>Seven pillars of well-being and indigenous ingredients are the foundation of
-                                    the
-                                    spa experience at this resort. Tropical papaya, aloe vera, volcanic stones
-                                    and
-                                    other locally developed ingredients are combined.</p>
-                                <button class="booknow">BOOK NOW</button>
-                                <div class="btngrslidebot">
+    .subMenu li {
+        padding: 10px;
+    }
 
-                                </div>
-                            </div>
+    .subMenu li a {
+        color: #666666;
+        text-decoration: none;
+        display: block;
+        padding: 5px 15px;
+    }
 
-                        </div>
+    .subMenu li a:hover {
+        background-color: #f8f8f8;
+    }
 
-                    </div>
+    .hasSub:hover .subMenu {
+        display: block;
+    }
+</style>
 
-                </div>
-                <div class="carousel-item">
-                    <div class="slidebot2 d-block w-100">
-                        <div class="textsliderBottom2">
-                            <div class="textsliderBottominner">
-                                <h2>Culinary Experience</h2>
-                                <p>Whether you choose an intimate, inspired dinner at Junction or traditional
-                                    pub
-                                    fare at The Tavern, your taste buds will rejoice at how inventive and fresh
-                                    our
-                                    food is—many of our ingredients are grown on-site in our organic garden.</p>
-                                <button class="booknow">BOOK NOW</button>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="btngrslidebot">
-                <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators"
-                    data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators"
-                    data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
-            </div>
-
-        </div>
-    </div>
+<section class="main-menu">
+    <nav class="menu">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active home" href="#">Home</a>
+            </li>
+            <li class="nav-item hasSub">
+                <a class="nav-link navitem" href="#">Rooms</a>
+                <ul class="subMenu">
+                    <li><a href="#">Room Booking List</a></li>
+                    <li><a href="#">Room Cards</a></li>
+                    <li><a href="#">Room Carousel</a></li>
+                    <li><a href="#">Room Single</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navitem" href="#">Elements</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navitem">Pages</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navitem">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navitem">Contact</a>
+            </li>
+        </ul>
+    </nav>
 </section>

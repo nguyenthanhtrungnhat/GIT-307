@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.7em;
+    font-family: "Open Sans";
+}
+
+a {
+    text-decoration: none;
+
+}
+
+/* p{
+        font-family: ;
+    } */
+.top-bar {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+}
+
+
+.contact-info {
+    display: flex;
+
+}
+
+.marker {
+    padding-left: 20px;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.marker i,
+span {
+
+    color: white;
+
+    font-size: 12px;
+}
+
+.call a,
+i,
+span {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.top-bar {
+    padding: 0;
+    background-color: #222222;
+}
+
+.call {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.above-menu {
+    text-align: center;
+}
+
+.logomenu {
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.home {
+    color: #111111;
+    padding: 15px 8px;
+}
+
+.navitem {
+    color: #666666;
+    padding: 15px 8px;
+}
+
+.nav-item {
+    margin: 0 7px;
+}
+
+.main-menu {
+    border: 1px solid #eaeaea;
+}
+
+.subMenu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    z-index: 9999;
+
+    padding: 20px;
+    width: 200px;
+    color: #666666;
+}
+
+.subMenu a {
+    margin-bottom: 10px;
+    color: #666666;
+    text-decoration: none;
+
+}
+
+.hasSub:hover>.subMenu {
+    display: block;
+    background-color: white;
+
+}
+
+.hasSub:hover>.subMenu>.navitem {
+    color: #111111;
+    text-decoration: none;
+}
+
+.hasSub {
+    position: relative;
+
+}
+
+.slidersec11 {
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(Images/Slider\ 1.jpg);
+}
+
+.slidersec12 {
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(Images/Slider\ 2.jpg);
+}
+
+.testTextr {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    height: 500px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    padding-left: 130px;
+    padding-right: 130px;
+
+}
+
+.testTextr form {
+    background-color: rgba(34, 34, 34, 0.8);
+    padding: 30px;
+}
+
+.testTextr .row1 {
+    margin-bottom: 10px;
+}
+
+.testTextr .row2 {
+    margin-bottom: 20px;
+}
+
+.testTextl {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    height: 500px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 150px;
+    color: white;
+}
+
+.checkav {
+    background-color: tan;
+    color: white;
+    text-align: center;
+    border: none;
+    width: 100%;
+    padding: 10px;
+}
+
+.testSec {
+    position: relative;
+}
+
+.testTextr label {
+    color: #eaeaea;
+
+}
+
+.section1:hover .sec1prev {
+    display: flex;
+}
+
+.section1:hover .sec1next {
+    display: flex;
+}
+
+.sec1prev,
+.sec1next {
+    display: none;
+}
+
+.itemBay2 img {
+    height: 160px;
+}
+
+.hotelBay {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.slidebot1 {
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(Images/Spa\ like\ no\ other.jpg);
+}
+
+.slidebot2 {
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(Images/Culinary\ Experience.jpg);
+}
+
+.textsliderBottom1 {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(34, 34, 34, 0.8);
+}
+
+.textsliderBottom2 {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(35, 35, 35, 0.8);
+}
+
+.textsliderBottominner {
+    margin: auto;
+    padding-top: 20%;
+    width: 70%;
+    color: white;
+}
+
+.booknow {
+    background-color: tan;
+    color: white;
+    text-align: center;
+    border: none;
+    width: 50%;
+    padding: 10px;
+}
+
+.btngrslidebot {
+    position: relative;
+    margin-top: 40px;
+    width: 100px;
+}
+
+.btngrslidebot button {
+    position: absolute;
+    border: 1px solid white;
+    padding: 24px;
+}
+
+.carousel-control-prev {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.carousel-control-next {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.iipic {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    height: 118px;
+}
+
+.iiBorder {
+    text-align: center;
+    height: 100%;
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 7px;
+
+}
+
+.inspiredincentives {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.iiTitle {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.iiTitle p {
+    margin-bottom: 8px;
+}
+
+.iiBorder h6 {
+    color: #111;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.iiitem {
+    margin-bottom: 20px;
+}
+
+.Whatothersay {
+    margin-bottom: 200px;
+}
+
+.rowPerson {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.person {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.personBOrder {
+    border: 1px solid gray;
+    border-radius: 7px;
+    padding: 20px;
+    height: 100%;
+}
+
+.person .personBOrder .avatar img {
+    border-radius: 50%;
+}
+
+.avatar,
+.personalPng {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ctnwos {
+    text-align: center;
+}
+
+.ctnTitle p {
+    margin-bottom: 8px;
+}
+
+.personBOrder h4 {
+    color: #111;
+    font-family: "Old Standard TT";
+}
+
+.andnBorder {
+    border: 1px solid gray;
+    border-radius: 7px;
+}
+
+.andPicture img {
+    width: 100%;
+    border: 2px;
+}
+
+.andnText {
+    padding: 15px;
+}
+
+.smallAnandNText {
+    font-size: small;
+}
+
+.btnAandN button {
+    border: none;
+    background-color: white;
+    padding: 0;
+}
+
+.andnItem {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.botTextAandN {
+    border-bottom: 3px solid gray;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+}
+
+.colbotTextAandN {
+    padding: 20px;
+
+}
+
+.botTextAandN button {
+    background-color: white;
+    border: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.andnTitle {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.andnTitle p {
+    margin-bottom: 8px;
+}
+
+.foot {
+    background-color: #343434;
+}
+
+.copyright {
+    background-color: black;
+    color: grey;
+    text-align: center;
+    padding: 30px;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+.flogo .logo {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.frow {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.linkcol ul li {
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+
+.linkcol ul li a {
+    color: grey;
+    text-decoration: none;
+}
+
+.foot h5 {
+    color: white;
+}
+
+.addresscol p {
+    color: grey;
+}
+
+.flogo p {
+    color: grey;
+}
+
+.footformmail {
+    margin-bottom: 10px;
+}
+
+.footformmailip {
+    width: 100%;
+    padding: 23px;
+    border: none;
+}
+
+.footform {
+    width: 100%;
+}
+
+.iconemail {
+    background-color: white;
+    border: none;
+
+}
+
+.iconblack {
+    color: black;
+}
+
+.room {
+    border: 1px solid grey;
+    border-radius: 3px;
+    box-shadow: 3px 4px 8px -1px rgba(0, 0, 0, 0.75);
+    height: 100%;
+}
+
+.roompic>img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.inforoom {
+    padding: 10px;
+}
+
+.LodgingTitle {
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+
+.Lodging {
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.Lodging .col-4 {
+    padding: 20px;
+}
+
