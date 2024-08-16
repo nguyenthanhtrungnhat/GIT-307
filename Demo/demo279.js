@@ -67,12 +67,24 @@ $(document).ready(function () {
     $.get(
         "http://139.180.213.49/getdata.php",
         {
-            'type': 'golf'
-
+            type: 'golf'
         },
-
-    )
-})
+        function (data) {
+            let serviceElement = '';
+            $.each(data, function (index, s) {
+                serviceElement +=
+                    `<div class="col-lg-4 col-sm-12 item-sv">
+                        <article class="servicePicture">
+                            <img src="${s.imageURL}" loading="lazy">
+                            <div class="text-sv">
+                                <h2><strong>${s.Title}</strong></h2>
+                                <p>${s.Content}</p>
+                            </div>
+                        </article>
+                    </div>`;
+            });
+            $('#serviceRow').append(serviceElement);
+        },'json')});
 
 
 

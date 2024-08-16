@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parsing Numbers Assignment</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Assignment 4: Parsing Numbers</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>str</th>
+            <th>parseInt(str)</th>
+            <th>parseFloat(str)</th>
+            <th>Number(str)</th>
+            <th>+str</th>
+            <th>str | 0</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1234</td>
+            <td id="parseInt-1234"></td>
+            <td id="parseFloat-1234"></td>
+            <td id="number-1234"></td>
+            <td id="plus-1234"></td>
+            <td id="bitwise-1234"></td>
+        </tr>
+        <tr>
+            <td>1234abc</td>
+            <td id="parseInt-1234abc"></td>
+            <td id="parseFloat-1234abc"></td>
+            <td id="number-1234abc"></td>
+            <td id="plus-1234abc"></td>
+            <td id="bitwise-1234abc"></td>
+        </tr>
+        <tr>
+            <td>0.15</td>
+            <td id="parseInt-0.15"></td>
+            <td id="parseFloat-0.15"></td>
+            <td id="number-0.15"></td>
+            <td id="plus-0.15"></td>
+            <td id="bitwise-0.15"></td>
+        </tr>
+        <tr>
+            <td>3.14ivan</td>
+            <td id="parseInt-3.14ivan"></td>
+            <td id="parseFloat-3.14ivan"></td>
+            <td id="number-3.14ivan"></td>
+            <td id="plus-3.14ivan"></td>
+            <td id="bitwise-3.14ivan"></td>
+        </tr>
+        <tr>
+            <td>Infinity</td>
+            <td id="parseInt-Infinity"></td>
+            <td id="parseFloat-Infinity"></td>
+            <td id="number-Infinity"></td>
+            <td id="plus-Infinity"></td>
+            <td id="bitwise-Infinity"></td>
+        </tr>
+        <tr>
+            <td>999999999999999999999</td>
+            <td id="parseInt-999999999999999999999"></td>
+            <td id="parseFloat-999999999999999999999"></td>
+            <td id="number-999999999999999999999"></td>
+            <td id="plus-999999999999999999999"></td>
+            <td id="bitwise-999999999999999999999"></td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    function parseAndDisplay(id, str) {
+        document.getElementById(`parseInt-${id}`).innerText = parseInt(str);
+        document.getElementById(`parseFloat-${id}`).innerText = parseFloat(str);
+        document.getElementById(`number-${id}`).innerText = Number(str);
+        document.getElementById(`plus-${id}`).innerText = +str;
+        document.getElementById(`bitwise-${id}`).innerText = str | 0;
+    }
+
+    parseAndDisplay('1234', '1234');
+    parseAndDisplay('1234abc', '1234abc');
+    parseAndDisplay('0.15', '0.15');
+    parseAndDisplay('3.14ivan', '3.14ivan');
+    parseAndDisplay('Infinity', 'Infinity');
+    parseAndDisplay('999999999999999999999', '999999999999999999999');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6. Product List</title>
+</head>
+
+<body>
+    <script>
+        let products = [
+            { id: 1, productName: "samsung", productImage: "hinhanhcuasamsung", productPrice: 200, quantity: 10 },
+            { id: 2, productName: "iphone", productImage: "hinhanhcuaiphone", productPrice: 100, quantity: 5 },
+            { id: 3, productName: "xiaomi", productImage: "hinhanhcuaxiaomi", productPrice: 300, quantity: 8 }
+        ];
+
+        function sortProducts() {
+            products.sort((a, b) => a.productName.localeCompare(b.productName));
+            console.log("Sorted products by name:", products);
+        }
+
+        function printProducts() {
+            console.log("Product list:");
+            products.forEach(product => {
+                console.log(`ID: ${product.id}, Name: ${product.productName}, Price: ${product.productPrice}, Quantity: ${product.quantity}, Image: ${product.productImage}`);
+            });
+        }
+
+        function addProductToHead(newProduct) {
+            products.unshift(newProduct);
+            console.log("Added new product to head:", newProduct);
+        }
+
+        function addProductToTail(newProduct) {
+            products.push(newProduct);
+            console.log("Added new product to tail:", newProduct);
+        }
+
+        function searchProductByName(name) {
+            const result = products.filter(product => product.productName.toLowerCase().includes(name.toLowerCase()));
+            console.log(`Search results for "${name}":`, result);
+        }
+
+        function removeProductById(id) {
+            products = products.filter(product => product.id !== id);
+            console.log(`Removed product with ID ${id}`);
+        }
+
+        function editProductById(id, updatedProduct) {
+            const index = products.findIndex(product => product.id === id);
+            if (index !== -1) {
+                products[index] = { ...products[index], ...updatedProduct };
+                console.log(`Updated product with ID ${id}:`, products[index]);
+            } else {
+                console.log(`Product with ID ${id} not found.`);
+            }
+        }
+
+
+        sortProducts();
+
+        printProducts();
+
+        addProductToHead({ id: 4, productName: "nokia", productImage: "hinhanhcuanokia", productPrice: 150, quantity: 20 });
+
+        addProductToTail({ id: 5, productName: "oppo", productImage: "hinhanhcuaoppo", productPrice: 250, quantity: 12 });
+
+        printProducts();
+
+        searchProductByName("iphone");
+
+        removeProductById(2); 
+
+        printProducts();
+
+        editProductById(3, { productName: "xiaomi updated", productPrice: 350 });
+
+        printProducts();
+
+    </script>
+</body>
+
+</html>

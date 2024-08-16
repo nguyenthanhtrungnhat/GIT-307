@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Do List</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .mytodolist {
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .addBtn {
+            background-color: #dcdcdc;
+            color: #555;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            padding: 15px;
+            position: relative;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .close {
+            position: absolute;
+            right: 10px;
+        }
+
+        li:nth-child(odd) {
+            background-color: #eee;
+        }
+
+        .blue {
+            padding: 10px;
+            background-color: skyblue;
+        }
+
+        h2 {
+            font-weight: bold;
+            color: white;
+        }
+
+        .checked {
+            text-decoration: line-through;
+            background-color: #555 !important;
+            color: white;
+        }
+
+        .checked::before {
+            font-family: 'fontawesome';
+            content: '\f00c';
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mytodolist">
+        <div class="blue">
+            <h2>My To Do List</h2>
+            <div class="input-group mb-2">
+                <input type="text" class="form-control input" id="inlineFormInputGroup" placeholder="Title...">
+                <div class="input-group-prepend">
+                    <div class="input-group-text add">Add</div>
+                </div>
+            </div>
+        </div>
+        <ul class="list">
+            <li class="task">Hit the gym <span class="close">×</span></li>
+        </ul>
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+<script>
+    $('.add').click(function () {
+        let newValue = $(".input").val();
+        $('.list').append(` <li class="task">${newValue}<span class="close">×</span></li>`)
+    })
+    $('.list').on('click', '.close', function () {
+        $(this).parent().remove();
+    });
+    $('.list').on('click', '.task', function () {
+        $(this).toggleClass('checked');
+    });
+</script>
+
+</html>
