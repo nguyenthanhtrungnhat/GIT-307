@@ -72,7 +72,16 @@
                                 <div class="col-2"><button type="submit" class="btn btn-primary add">Update</button>
                                 </div>
                             </div>
-
+                            <div class="title">Find students by the name </div>
+                            <div class="row myRow">
+                                <div class="col-2"><input type="text" class="form-control searchName"
+                                        id="formGroupExampleInput " placeholder="Enter student name"></div>
+                                <div class="col-2"><button id="searchBtn" type="submit"
+                                        class="btn btn-primary ">Search</button>
+                                </div>
+                            </div>
+                            <div class="title">Edit student's information</div>
+                            
                         </div>
                         <div class="myTable">
                             <div class="title">Student List</div>
@@ -103,87 +112,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
     crossorigin="anonymous"></script>
-    <script src="Assignment4.js"></script>
-<!-- <script type="text/javascript">
-
-    $(document).ready(function () {
-
-        $.get(
-            'http://139.180.213.49/getdata-student.php',
-            {
-                Type: 'Student'
-            },
-            function (data) {
-                console.log(data)
-                data.sort((a, b) => {
-                    return a.Class.localeCompare(b.Class);
-                })
-                let element = '';
-                let unique = '';
-                for (let each of data) {
-                    if (each.Class != unique)
-                        element += `<li>${each.Class}</li>`
-                    unique = `${each.Class}`;
-                }
-
-                $('.myClass').append(element);
-            }, 'json'
-
-        )
-        $.get(
-            'http://139.180.213.49/getdata-student.php', { Type: "Student" },
-            function (data) {
-                console.log(data);
-                data.sort((a, b) => {
-                    return a.Name.localeCompare(b.Name);
-                });
-                let element = "";
-                for (let i = 0; i < data.length; i++) {
-                    element = "";
-                    element += `<tr>
-                                        <td>${i}</td>
-                                        <td>${data[i].Name}</td>
-                                        <td>${data[i].ID}</td>
-                                        <td><button>Edit</button>
-                                        <Button>Delete</Button></td>
-                                    </tr>`;
-                    $('.tableBody').append(element);
-                }
-            }, 'JSON'
-        )
-        // Adding a new student
-        $(".add").click(function () {
-
-            let ID = $('#formGroupExampleInput\\ 2230').val();
-            let Name = $('#formGroupExampleInput\\ 2231').val();
-            let Class = $('#inputState\\ 2233').val();
-            // Check if all fields are filled
-            if (ID.trim() === '' || Name.trim() === '' || Class.trim() === '') {
-                alert('Please fill out all fields.');
-                return;
-            }
-            let newStudent = `<tr>
-                    <td>${}</td>
-                    <td>${Name}</td>
-                    <td>${ID}</td>
-                    <td><button>Edit</button><button>Delete</button></td>
-                </tr>`;
-           
-            // Prepend the new student to the top of the list
-            $('.tableBody').prepend(newStudent);
-
-
-
-            // Clear the input fields after adding
-            $('#formGroupExampleInput\\ 2230').val('');
-            $('#formGroupExampleInput\\ 2231').val('');
-            $('#inputEmail4\\ 2232').val('');
-            $('#inputState\\ 2233').val('Lớp 1');
-
-        });
-    });
-
-</script> -->
-
+<script src="Assignment4.js"></script>
 
 </html>
