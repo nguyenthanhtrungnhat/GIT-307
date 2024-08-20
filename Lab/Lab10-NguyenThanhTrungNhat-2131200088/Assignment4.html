@@ -104,7 +104,7 @@
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
     crossorigin="anonymous"></script>
 <script type="text/javascript">
-
+    let i = 1;
     $(document).ready(function () {
 
         $.get(
@@ -129,12 +129,6 @@
             }, 'json'
 
         )
-
-    });
-
-    let i = 1;
-    $(document).ready(function () {
-
         $.get(
             'http://139.180.213.49/getdata-student.php',
             {
@@ -160,39 +154,41 @@
 
             }, 'JSON'
         )
-    });
+        // Adding a new student
+        $(".add").click(function () {
 
-
-    // Adding a new student
-    $(".add").click(function () {
-
-        let ID = $('#formGroupExampleInput\\ 2230').val();
-        let Name = $('#formGroupExampleInput\\ 2231').val();
-        let Class = $('#inputState\\ 2233').val();
-         // Check if all fields are filled
-         if (ID.trim() === '' || Name.trim() === '' || Class.trim() === '') {
+            let ID = $('#formGroupExampleInput\\ 2230').val();
+            let Name = $('#formGroupExampleInput\\ 2231').val();
+            let Class = $('#inputState\\ 2233').val();
+            // Check if all fields are filled
+            if (ID.trim() === '' || Name.trim() === '' || Class.trim() === '') {
                 alert('Please fill out all fields.');
                 return;
             }
-        let newStudent = `<tr>
-                            <td>${i}</td>
-                            <td>${Name}</td>
-                            <td>${ID}</td>
-                            <td><button>Edit</button><button>Delete</button></td>
-                        </tr>`;
-        i++;
-        // Prepend the new student to the top of the list
-        $('.tableBody').prepend(newStudent);
+            let newStudent = `<tr>
+                    <td>${i}</td>
+                    <td>${Name}</td>
+                    <td>${ID}</td>
+                    <td><button>Edit</button><button>Delete</button></td>
+                </tr>`;
+            i++;
+            // Prepend the new student to the top of the list
+            $('.tableBody').prepend(newStudent);
 
 
 
-        // Clear the input fields after adding
-        $('#formGroupExampleInput\\ 2230').val('');
-        $('#formGroupExampleInput\\ 2231').val('');
-        $('#inputEmail4\\ 2232').val('');
-        $('#inputState\\ 2233').val('Lớp 1');
+            // Clear the input fields after adding
+            $('#formGroupExampleInput\\ 2230').val('');
+            $('#formGroupExampleInput\\ 2231').val('');
+            $('#inputEmail4\\ 2232').val('');
+            $('#inputState\\ 2233').val('Lớp 1');
 
+        });
     });
+
+
+
+
 
 </script>
 
