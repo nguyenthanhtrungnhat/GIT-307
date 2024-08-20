@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        .title {
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+
+        .myRow {
+            padding: 10px;
+        }
+
+        .myborder,
+        .myForm {
+            border: 1px black solid;
+            padding: 10px;
+        }
+
+        .myTable {
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td button {
+            border: none;
+            background-color: white;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main">
+        <div class="container-fluid">
+            <h1>Student Management System</h1>
+            <div class="row">
+                <div class="col-3 column1">
+                    <div class="myborder">
+                        <h2>Class List</h2>
+                        <ul class="myClass">
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-9 column2">
+                    <div class="myborder">
+                        <div class="myForm">
+                            <div class="title">Edit student's information</div>
+                            <div class="row myRow">
+                                <div class="col-2"><input type="text" class="form-control"
+                                        id="formGroupExampleInput 2230" placeholder="2230"></div>
+                                <div class="col-3"><input type="text" class="form-control"
+                                        id="formGroupExampleInput 2231" placeholder="Nguyễn Văn A"></div>
+                                <div class="col-3"><input type="email" class="form-control" id="inputEmail4 2232"
+                                        placeholder="a@student.com"></div>
+                                <div class="col-2"><select id="inputState 2233" class="form-control">
+                                        <option selected>Lớp 1</option>
+                                        <option>Lớp 2</option>
+                                    </select></div>
+                                <div class="col-2"><button type="submit" class="btn btn-primary add">Update</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="myTable">
+                            <div class="title">Student List</div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Full Name</th>
+                                        <th>Student ID</th>
+                                        <th>Function</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tableBody" id="tableBody">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $.get(
+            'http://139.180.213.49/getdata-student.php',
+            {
+                Type: 'Student'
+            },
+            function (data) {
+                console.log(data)
+                data.sort((a, b) => {
+                    return a.Class.localeCompare(b.Class);
+                })
+                let element = '';
+                let unique = '';
+                for (let each of data) {
+                    if (each.Class != unique)
+                        element += `<li>${each.Class}</li>`
+                    unique = `${each.Class}`;
+                }
+
+                $('.myClass').append(element);
+            }, 'json'
+
+        )
+
+    });
+
+    $(document).ready(function () {
+
+        $.get(
+            'http://139.180.213.49/getdata-student.php',
+            {
+                Type: 'Student'
+            },
+
+            function (data) {
+                data.sort((a, b) => {
+                    return a.Name.localeCompare(b.Name);
+                })
+                let element = '';
+                let i = 1;
+                for (let each of data) {
+                    element += `<tr>
+                                        <td>${i}</td>
+                                        <td>${each.Name}</td>
+                                        <td>${each.ID}</td>
+                                        <td><button>Edit</button><Button>Delete</Button></td>
+                                    </tr>`
+                    i++;
+                }
+                $('.tableBody').append(element);
+
+            }, 'JSON'
+        )
+    });
+
+
+</script>
+
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2. “Go to top” Button</title>
+    <style>
+        body {
+            height: 2000px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .go-top {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            background-color: gray;
+            color: white;
+            border-radius: 50%;
+            line-height: 40px;
+            cursor: pointer;
+            position: fixed;
+            right: 40px;
+            bottom: 40px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="go-top">
+        ^
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+         
+            $(".go-top").click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 1000);
+            });
+
+          
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $(".go-top").fadeIn();
+                } else {
+                    $(".go-top").fadeOut();
+                }
+            });
+        });
+    </script>
+</html>
