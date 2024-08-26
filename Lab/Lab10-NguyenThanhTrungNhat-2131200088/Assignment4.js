@@ -23,15 +23,18 @@ $(document).ready(function () {
         }, 'json'
 
     )
+    function sorttt(data) {
+        data.sort((a, b) => {
+            return a.Name.localeCompare(b.Name);
+        });
+    }
     $.get(
         'http://139.180.213.49/getdata-student.php', { Type: "Student" },
         function (data) {
             console.log(data);
-            studentArray = studentArray.concat(data)
+            sorttt(data);
+            studentArray = data;
 
-            data.sort((a, b) => {
-                return a.Name.localeCompare(b.Name);
-            });
             let element = "";
             for (let i = 0; i < data.length; i++) {
                 element = "";
@@ -40,7 +43,7 @@ $(document).ready(function () {
                                         <td>${data[i].Name}</td>
                                         <td>${data[i].ID}</td>
                                         <td><button class='edit' data-id='${data[i].ID}'>Edit</button>
-                                       <Button class="delete deleteid${data[i].ID}">Delete</Button></td>
+                                     <Button class="delete" id = '${data[i].ID}' >Delete</Button></td>
                                     </tr>`;
                 $('.tableBody').append(element);
             }
@@ -77,32 +80,56 @@ $(document).ready(function () {
                                         <td>${studentArray[i].Name}</td>
                                         <td>${studentArray[i].ID}</td>
                                         <td><button class='edit' data-id='${studentArray[i].ID}'>Edit</button>
-                                         <Button class="delete deleteid${studentArray[i].ID}">Delete</Button></td>
+                                        <Button class="delete" id = '${studentArray[i].ID}' >Delete</Button></td>
                                     </tr>`;
             $('.tableBody').append(element);
         }
     });
+    // $(document).on('click', '.delete', function () {
+
+    //     let idToDelete = $(this).attr('class').match(/deleteid(\d+)/)[1];
+
+    //     studentArray = studentArray.filter(student => student.ID !== idToDelete);
+
+    //     $('.tableBody').empty();
+
+    //     let element = "";
+    //     for (let i = 0; i < studentArray.length; i++) {
+    //         element = '';
+    //         element += `<tr>
+    //                         <td>${i}</td>
+    //                         <td>${studentArray[i].Name}</td>
+    //                         <td>${studentArray[i].ID}</td>
+    //                         <td><button class='edit' data-id='${studentArray[i].ID}'>Edit</button>
+    //                         <Button class="delete deleteid${studentArray[i].ID}">Delete</Button></td>
+    //                     </tr>`;
+    //         $('.tableBody').append(element);
+    //     }
+    // });
     $(document).on('click', '.delete', function () {
 
-        let idToDelete = $(this).attr('class').match(/deleteid(\d+)/)[1];
-
-        studentArray = studentArray.filter(student => student.ID !== idToDelete);
+        let idToDelete = $(this).attr('id');
 
         $('.tableBody').empty();
 
         let element = "";
         for (let i = 0; i < studentArray.length; i++) {
-            element = '';
+            if (studentArray[i].ID === idToDelete) {
+                studentArray.splice(i, 1)
+            }
             element += `<tr>
                             <td>${i}</td>
                             <td>${studentArray[i].Name}</td>
                             <td>${studentArray[i].ID}</td>
                             <td><button class='edit' data-id='${studentArray[i].ID}'>Edit</button>
-                            <Button class="delete deleteid${studentArray[i].ID}">Delete</Button></td>
+                           <Button class="delete" id = '${studentArray[i].ID}' >Delete</Button></td>
                         </tr>`;
-            $('.tableBody').append(element);
+
         }
+        $('.tableBody').append(element);
     });
+
+
 
     $('#searchBtn').click(function () {
         let searchName = $('.searchName').val().trim().toLowerCase();
@@ -126,7 +153,7 @@ $(document).ready(function () {
                                     <td>${filteredStudents[i].Name}</td>
                                     <td>${filteredStudents[i].ID}</td>
                                     <td><button class='edit' data-id='${filteredStudents[i].ID}'>Edit</button>
-                                    <Button class="delete deleteid${filteredStudents[i].ID}">Delete</Button></td>
+                                    <Button class="delete" id = '${filteredStudents[i].ID}' >Delete</Button></td>
                                 </tr>`;
             $('.tableBody').append(element);
         }
@@ -149,7 +176,7 @@ $(document).ready(function () {
                                 <td>${filteredStudents[i].Name}</td>
                                 <td>${filteredStudents[i].ID}</td>
                                 <td><button class='edit' data-id='${filteredStudents[i].ID}'>Edit</button>
-                                <Button class="delete deleteid${filteredStudents[i].ID}">Delete</Button></td>
+                               <Button class="delete" id = '${filteredStudents[i].ID}' >Delete</Button></td>
                             </tr>`;
             $('.tableBody').append(element);
         }
