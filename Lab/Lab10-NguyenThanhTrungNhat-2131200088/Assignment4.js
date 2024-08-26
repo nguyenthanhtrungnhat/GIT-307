@@ -1,6 +1,5 @@
 $(document).ready(function () {
     let studentArray = new Array();
-    let classArray = new Array();
     $.get(
         'http://139.180.213.49/getdata-student.php',
         {
@@ -85,27 +84,7 @@ $(document).ready(function () {
             $('.tableBody').append(element);
         }
     });
-    // $(document).on('click', '.delete', function () {
 
-    //     let idToDelete = $(this).attr('class').match(/deleteid(\d+)/)[1];
-
-    //     studentArray = studentArray.filter(student => student.ID !== idToDelete);
-
-    //     $('.tableBody').empty();
-
-    //     let element = "";
-    //     for (let i = 0; i < studentArray.length; i++) {
-    //         element = '';
-    //         element += `<tr>
-    //                         <td>${i}</td>
-    //                         <td>${studentArray[i].Name}</td>
-    //                         <td>${studentArray[i].ID}</td>
-    //                         <td><button class='edit' data-id='${studentArray[i].ID}'>Edit</button>
-    //                         <Button class="delete deleteid${studentArray[i].ID}">Delete</Button></td>
-    //                     </tr>`;
-    //         $('.tableBody').append(element);
-    //     }
-    // });
     $(document).on('click', '.delete', function () {
 
         let idToDelete = $(this).attr('id');
